@@ -1,6 +1,11 @@
 new Vue({
 	el: '#app',
 	data: {
-		title: 'Hello world',
+		title: 'Hello World',
+	},
+	methods: {
+		changeTitle() {
+			this.title = 'Hello World Updated!';
+		},
 	},
 });

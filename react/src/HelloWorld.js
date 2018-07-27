@@ -7,10 +7,14 @@ class HelloWorld extends React.Component {
 		};
 	}
 
+	changeTitle = () => this.setState({ title: 'Hello World Updated!' });
+
 	render() {
 		return (
 			<div className="app">
-				<h1 className="app__title">{this.state.title}</h1>
+				<h1 onClick={this.changeTitle} className="app__title">
+					{this.state.title}
+				</h1>
 			</div>
 		);
 	}
