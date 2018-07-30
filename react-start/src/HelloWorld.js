@@ -4,6 +4,7 @@ class HelloWorld extends React.Component {
 
 		this.state = {
 			title: 'Hello World!',
+			imgUrl: 'https://imgur.com/whm2eGE',
 		};
 	}
 
@@ -14,6 +15,8 @@ class HelloWorld extends React.Component {
 			<div className="app">
 				<h1 onClick={this.changeTitle} className="app__title">
 					{this.state.title}
+					<hr />
+					<img src={this.state.imgUrl} alt="" />
 				</h1>
 			</div>
 		);

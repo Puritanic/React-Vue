@@ -12,6 +12,9 @@
 	<div class="app" id="app">
 		<div @click="changeTitle">
 			{{ title }}
+			<hr> {{ addSubtitle() }}
+			<hr>
+			<img v-bind:src="imgUrl" alt="Gordon">
 		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
