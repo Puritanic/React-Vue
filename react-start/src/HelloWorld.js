@@ -3,12 +3,12 @@ class HelloWorld extends React.Component {
 		super(props);
 
 		this.state = {
-			title: 'Hello World!',
+			title: 'Rise and Shine!',
 			imgUrl: 'https://imgur.com/whm2eGE',
 		};
 	}
 
-	changeTitle = () => this.setState({ title: 'Hello World Updated!' });
+	changeTitle = () => this.setState({ title: 'Rise and Shine Updated!' });
 
 	render() {
 		return (
@@ -16,7 +16,7 @@ class HelloWorld extends React.Component {
 				<h1 onClick={this.changeTitle} className="app__title">
 					{this.state.title}
 					<hr />
-					<img src={this.state.imgUrl} alt="" />
+					<img src={this.state.imgUrl} alt="Gordon" />
 				</h1>
 			</div>
 		);
